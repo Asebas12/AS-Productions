@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AS Productions</title>
+<meta name="description" content="AS Productions: compañía creativa independiente. Producción propia, servicios para clientes y una red de profesionales.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGO: marca aproximada en SVG. Cuando quieras, reemplaza estos dos paths por tu logo real (SVG) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="m1" class="m1" d="M38.4 0H54.1L34.5 61.1H62L58.1 87.9H12Q0 88 .5 78L8.2 27Q9 21 15 21H27.9Z"/>
+    <path id="m2" class="m2" d="M63 20.7H113Q120 21 119.500 28L111.500 80Q110.500 87.400 103 87.400H92.600L86.500 102Q85.500 104.200 82 104.200H69Q66.500 104.200 67.600 101L85.500 42.500H60Q57.500 42.500 58.200 39.700Z"/>
+  </defs>
+</svg>
+
+<header class="top">
+  <a class="brand" href="#top" aria-label="AS Productions, inicio">
+    <svg viewBox="0 0 120 105" aria-hidden="true"><use href="#m1"/><use href="#m2"/></svg>
+    <span>AS Productions</span>
+  </a>
+  <nav id="nav" aria-label="Principal">
+    <a href="#branches">Ramas</a>
+    <a href="#divisions">Divisiones</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+  <button id="theme" class="icon" type="button" aria-label="Cambiar entre modo claro y oscuro">◐</button>
+  <button id="menu" class="icon only-mobile" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">≡</button>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Independent creative company.</h1>
+      <p class="lead">Hacemos cine, música, videojuegos y libros propios, y producimos para quienes quieren hacer lo suyo.</p>
+      <div class="actions">
+        <a class="btn solid" href="#contact">Trabajemos juntos</a>
+        <a class="btn" href="#branches">Ver ramas</a>
+      </div>
+    </div>
+    <div class="hero-mark" id="mark" aria-hidden="true">
+      <svg viewBox="0 0 120 105"><use id="h1" href="#m1"/><use id="h2" href="#m2"/></svg>
+    </div>
+  </section>
+
+  <section id="branches" class="block">
+    <div class="block-head">
+      <h2>Una empresa matriz, muchas ramas.</h2>
+      <p class="serif">Cada rama crece con su propia voz bajo el mismo nombre.</p>
+    </div>
+    <div class="grid">
+      <a class="tile" href="#contact"><h3>AS Films</h3><p>Cine, cortometrajes y series.</p></a>
+      <a class="tile" href="#contact"><h3>AS Music</h3><p>Composición y producción musical.</p></a>
+      <a class="tile" href="#contact"><h3>AS Interactive</h3><p>Videojuegos y experiencias interactivas.</p></a>
+      <a class="tile" href="#contact"><h3>AS Publishing</h3><p>Libros, novelas y publicaciones.</p></a>
+      <a class="tile" href="#contact"><h3>AS Creative</h3><p>Edición, diseño y dirección creativa.</p></a>
+      <a class="tile" href="#contact"><h3>AS Originals</h3><p>Propiedad intelectual y proyectos originales.</p></a>
+    </div>
+  </section>
+
+  <section id="divisions" class="block">
+    <div class="block-head">
+      <h2>Creative production &amp; services.</h2>
+      <p class="serif">Tres divisiones, un mismo estándar.</p>
+    </div>
+    <div class="cols">
+      <article>
+        <h3>AS Studios</h3>
+        <p class="sub">Producción propia</p>
+        <ul>
+          <li>Videojuegos indie</li>
+          <li>Canal de YouTube</li>
+          <li>Música y proyectos audiovisuales</li>
+          <li>Películas, series y libros</li>
+        </ul>
+        <p class="note">La propiedad intelectual y los proyectos originales de la compañía.</p>
+      </article>
+      <article>
+        <h3>AS Agency</h3>
+        <p class="sub">Servicios a clientes</p>
+        <ul>
+          <li>Edición de video</li>
+          <li>Producción audiovisual</li>
+          <li>Diseño y contenido digital</li>
+          <li>Servicios creativos</li>
+        </ul>
+        <p class="note">Conseguimos clientes, cotizamos, producimos y entregamos.</p>
+      </article>
+      <article>
+        <h3>AS Network</h3>
+        <p class="sub">Red de profesionales</p>
+        <ul>
+          <li>Editores independientes</li>
+          <li>Diseñadores</li>
+          <li>Compositores</li>
+          <li>Desarrolladores de videojuegos</li>
+        </ul>
+        <p class="note">Talento independiente conectado con proyectos reales.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="block contact">
+    <div class="block-head">
+      <h2>Cuéntanos tu proyecto.</h2>
+      <p class="serif">Respondemos con una propuesta, no con una plantilla.</p>
+    </div>
+    <form id="form" novalidate>
+      <label>Nombre<input name="name" type="text" autocomplete="name" required></label>
+      <label>Correo<input name="email" type="email" autocomplete="email" required></label>
+      <label>Me interesa
+        <select name="topic">
+          <option>Un proyecto para mi marca (Agency)</option>
+          <option>Unirme a la red (Network)</option>
+          <option>Colaborar en un proyecto propio (Studios)</option>
+          <option>Otra cosa</option>
+        </select>
+      </label>
+      <label class="wide">Mensaje<textarea name="msg" rows="5" required></textarea></label>
+      <button class="btn solid" type="submit">Enviar mensaje</button>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <span>© <span id="year"></span> AS Productions</span>
+  <span class="links">
+    <a href="#" rel="noopener">YouTube</a>
+    <a href="#" rel="noopener">Instagram</a>
+    <a href="#" rel="noopener">GitHub</a>
+  </span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
