@@ -1,0 +1,18 @@
+{
+  "id": "AS-Productions",
+  "name": "AS Productions",
+  "short_name": "AS Productions",
+  "description": "AS Productions: compañía creativa independiente.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f2eb",
+  "theme_color": "#171717",
+  "icons": [
+    {
+      "src": "./Files/Logo.png",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
